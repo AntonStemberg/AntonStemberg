@@ -11,6 +11,10 @@ body {
     line-height: 17px;
 }
 
+.icon {
+    fill: sienna;
+}
+
 .visually-hidden {
 	position: absolute !important;
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -39,6 +43,19 @@ body {
     background-color: transparent;
     border: 0;
 }
+.header__button-icon:hover,
+.header__button-icon:focus {
+    background: rgb(125, 214, 125);
+}
+
+.header__button-icon:hover .icon,
+.header__button-icon:focus .icon {
+    fill: black;
+}
+.header__button-icon:active .icon {
+    fill: red
+}
+
 
 .header__link {
     margin: 0 0 0 33px;
@@ -61,20 +78,35 @@ body {
 }
 .brand__img {
 }
-.brand__title {
-font-size: 48px;
-font-weight: 900;
-line-height: 58px;
-color: var(--black);
-
-    
-}
 .brand__title-wrp {
     display: flex;
     align-items: center;
     padding: 0 0 0 92px;
     background-color: var(--pink-bkg);
     flex-grow: 1;
+    min-height: 150px;
+      padding: 40px;
+}
+
+.brand__title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    color: var(--black);
+    margin-left: 300px;
+}
+.brand__title {
+    position: absolute;
+    border: 1px ;
+ }
+ .brand__title::after {
+   content: '';
+   width: 10px;
+   height: 100%;
+   background:  #F16D7F;
+   position: absolute;
+   left: -20px;
+   top: 7px;
 }
 
 .brand__sub-title {
@@ -82,12 +114,17 @@ color: var(--black);
     font-size: 32px;
     line-height: 38px;
 }
-
 .brand__sub-title-pink {
     color: var(--pink-text);
 
 }
 
+.sales__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+     
 .sales__item {
     width: 360px;
     min-height: 260px;
@@ -118,6 +155,12 @@ color: var(--black);
     color: var(--pink-text);
 }
 .products {
+    width: 1140px;
+    margin: 0 auto;
+}
+.products__list {
+    display: flex;
+    justify-content: space-around;
 }
 .product__title {
     text-align: center;
@@ -126,7 +169,34 @@ color: var(--black);
 .products__text {
     color: #9F9F9F;
     text-align: center;
-    margin-bottom: 6px;
+    margin-bottom: 80px;
+}
+
+.button__product-icon {
+    border: 1px solid #FF6A6A;
+    height: 47px;
+    width: 211px;
+    margin-bottom: 10px;
+    margin-left: 479px;
+}
+.button__product-icon {
+    margin-top: 50px;
+}
+.header__button {
+    background-color: transparent;
+    border: 0;
+}
+.button__product-icon:hover,
+.button__product-icon:focus {
+    background: rgb(208, 113, 113);
+}
+
+.button__product-icon:hover .icon,
+.button__product-icon:focus .icon {
+    fill: rgb(55, 14, 14);
+}
+.button__product-icon:active .icon {
+    fill: rgb(118, 124, 167)
 }
 
 .footer__background-1 {
@@ -155,7 +225,7 @@ color: var(--black);
 .block {
     float: left;
     text-align: center;
-    
+    width: 300px;
     align-items: center;
     
 }
@@ -164,6 +234,8 @@ color: var(--black);
     font-size: 19.96px;
     line-height: 24px;
     color: #FBFBFB;
+    margin-bottom: 16px;
+    margin-top: 18px;
 }
 .texts__footer {
     font-weight: 300;
@@ -177,10 +249,53 @@ color: var(--black);
     display: flex;
     position: relative;
 }
+.subscribe__content{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+}
+.subscribe {
+    height: 142px;
+    width: 1000px;
+    left: 813px;
+    top: 350px;
+    border-radius: 0px;
+    text-align: center;
+    margin-left: 2000px;
+    position: absolute;
+
+}
+.enter {
+    
+    width: 256px;
+    left: 917px;
+    top: 243px;
+    border-radius: 0px;
+    height: 36px;
+   
+}
+.button__sub {
+    width: 85px;
+    left: 1181px;
+    top: 250px;
+    border-radius: nullpx;
+    height: 40px;
+    background: pink;
+}
+.subscribe__title{
+    margin: 20px
+
+}
+.subscribe__text{
+    margin: 20px;
+
+}
 .info__box {
     position: absolute;
-    margin: 97px 0 126px 228px;
-    width: 405px;
+    margin: 423px 139px 71px 1001px;
+    width: 412px;
+    padding: 0px;
 }
 .head__woman {
     align-items: center;
@@ -193,6 +308,7 @@ color: var(--black);
 }
 .footer {
     background-color: var(--black);
+  
 }
 
 .background__black {
@@ -216,7 +332,8 @@ color: var(--black);
 
 
 .footer__nav-group {
-   
+    right: 230px;
+    position: absolute;
     
 }
 .footer__link {
